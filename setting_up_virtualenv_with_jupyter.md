@@ -1,5 +1,5 @@
-# Getting 
-> Additional information or tagline
+# Getting started with a new virtual environment in JupyterHub
+> Create a new virtual environment then associate with JuypterHub instance
 
 ### Create new virtual environment
 
