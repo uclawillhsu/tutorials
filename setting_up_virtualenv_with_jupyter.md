@@ -22,25 +22,25 @@ pip3 install ipykernel
 
 ### Point JupyterHub to new environment
 
-Make new directory called kernels in `/home/<username>/.local/share/jupyter`
+Make new directory called `kernels` in `/home/<username>/.local/share/jupyter`
 
 ```shell
-mkdir /home/<username>/.local/share/jupyter/kernel
+mkdir /home/<username>/.local/share/jupyter/kernels/<environment_name>
 ```
-Create new file called in `/home/<username>/.local/share/jupyter/kernel` called `kernel.json`
+Create new file called in `/home/<username>/.local/share/jupyter/kernels/<environment_name>` called `kernel.json`
 
 ```shell
 vi /home/<username>/.local/share/jupyter/kernel/kernel.json
 ```
 
-Then copy/paste the following code replacing `username` and `environment_name`
+Then copy/paste the following code replacing `path_to_virtual_environment` with the path to your virtual environment
 
 ```shell
 {
 "argv": [
-  "/home/<username>/<environment_name>/bin/python",
+  "/<path_to_virtual_environment>/bin/python",
   "-m",
-  "ipykernel_launcher",
+  "ipykernel",
   "-f",
   "{connection_file}"
 ],
