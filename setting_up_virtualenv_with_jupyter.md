@@ -17,7 +17,7 @@ where  `environment_name` is the name that you specify
 ### Install IPythonKernel
 
 ```shell
-pip3 install ipykernel
+python3 -m ipykernel install --user
 ```
 
 ### Point JupyterHub to new environment
