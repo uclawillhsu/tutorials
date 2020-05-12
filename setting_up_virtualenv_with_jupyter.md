@@ -10,7 +10,7 @@ python3 -m venv <environment_name>
 ### Activate virtual environment
 
 ```shell
-<environment_name>/bin/activate
+source <environment_name>/bin/activate
 ```
 where  `environment_name` is the name that you specify
 
@@ -30,7 +30,7 @@ mkdir /home/<username>/.local/share/jupyter/kernels/<environment_name>
 Create new file called in `/home/<username>/.local/share/jupyter/kernels/<environment_name>` called `kernel.json`
 
 ```shell
-vi /home/<username>/.local/share/jupyter/kernel/kernel.json
+vi /home/<username>/.local/share/jupyter/kernels/<environment_name>/kernel.json
 ```
 
 Then copy/paste the following code replacing `path_to_virtual_environment` with the path to your virtual environment
@@ -50,4 +50,4 @@ Then copy/paste the following code replacing `path_to_virtual_environment` with 
 ```
 Save the file `:w!` then quit `:q!`
 
-# Reload JupyterHub
+Reload JupyterHub
